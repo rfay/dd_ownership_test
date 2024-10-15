@@ -1,0 +1,10 @@
+services:
+  test:
+    image: busybox
+    command: sleep infinity
+    container_name: test
+    user: 33:33
+    working_dir: /var/www/html
+    volumes:
+      - .:/var/www/html
+      - ./subdir:/var/www/html/subdir
