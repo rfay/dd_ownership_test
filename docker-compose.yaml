@@ -1,9 +1,9 @@
 services:
   test:
-    image: busybox
+    image: debian:bookworm
     command: sleep infinity
     container_name: test
-    user: 33:33
+    user: 501:501
     working_dir: /var/www/html
     volumes:
       - .:/var/www/html
