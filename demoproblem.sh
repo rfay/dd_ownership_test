@@ -2,6 +2,7 @@
 
 echo "Run this on the host"
 rm -rf subdir/subsub
+docker version | grep Server
 docker-compose up -d
 sleep 2
 
